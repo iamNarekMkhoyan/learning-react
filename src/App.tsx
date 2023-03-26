@@ -1,8 +1,10 @@
-import "./App.css";
-import Expenses from "./components/Expenses/Expenses";
-import { IExpenseItem } from "./shared/interfaces/expanseItem";
+import "./App.scss";
+import Expenses from "./base/components/features/Expenses/Expenses";
+import Card from "./base/components/ui/Card/Card";
+import { IExpenseItem } from "./base/shared/interfaces/expanseItem";
 
 function App() {
+  const componentClassName = "app-component";
   const expenses: IExpenseItem[] = [
     {
       id: "e1",
@@ -26,8 +28,10 @@ function App() {
   ];
 
   return (
-    <div>
-      <Expenses expenses={expenses} />
+    <div className={componentClassName}>
+      <Card className={componentClassName + "__card"}>
+        <Expenses expenses={expenses} />
+      </Card>
     </div>
   );
 }

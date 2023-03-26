@@ -1,0 +1,17 @@
+@import "./base//shared/styles/variables.scss";
+
+.app-component {
+  background-color: $app-background;
+  width: 100%;
+  min-height: 100vh;
+  color: $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  &__card {
+    width: 60%;
+    margin-top: 100px;
+    padding: 24px;
+    background-color: $background-dark;
+  }
+}

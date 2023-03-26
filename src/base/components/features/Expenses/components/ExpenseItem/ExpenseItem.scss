@@ -1,0 +1,22 @@
+@import "./../../../../../shared/styles/variables.scss";
+
+.expense-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &__info {
+    margin-left: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__price {
+      border: 1px solid $text-color;
+      border-radius: 8px;
+      background-color: $price-tag-color;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 8px 20px;
+    }
+  }
+}
